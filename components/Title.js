@@ -4,14 +4,19 @@ import { Style, Text, View } from 'react-native';
 const Title = () => {
     return (
         < View style={styles.container}>
-            <Text>QuizApp</Text>
+            <Text style={styles.title}>QuizApp</Text>
         </View >
     );
 };
 export default App;
 const styles = StyleSheet.create({
+    title: {
+        fontSize: 36,
+        fontWeight: '600',
+    },
     container: {
-        paddingTop: 40,
-        paddingHorizontal: 16,
+        paddingVertical: 16,
+        justifyContent: 'center',
+        alignItems: 'center',
     },
 });
